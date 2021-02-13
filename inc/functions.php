@@ -3,6 +3,8 @@
 
 
 
+// Create the Multidimensional array of quote elements and name it quotes
+// Each inner array element should be an associative array 
 $quotes = array(
 
   array('quote' => '"The only way to learn a new programming language is by writing programs in it."',
@@ -19,14 +21,14 @@ $quotes = array(
 
 
   
-
+// Create the getRandomQuote function and name it getRandomQuote
 function getRandomQuote($array){
   
  
   $randomElement;
 
   $randomElement = $array[rand(0,4)];
-  var_dump($randomElement);
+  //var_dump($randomElement);
  
   return $randomElement;  
 
@@ -34,8 +36,31 @@ function getRandomQuote($array){
 } 
 
 
+/*
+output
+  string from inside $quotes
+input
+  array getRandomQuote()
+process
+  print the quote string from the array given by getRandomQuote()
+algorithm
+  
+
+  
+
+*/
+
+//Create the printQuote function.
 function printQuote($quotes){
 $quoteElement = getRandomQuote($quotes);
+$source = $quoteElement['source'];
+$quote = $quoteElement['quote'];
+echo $source;
+echo "\n";
+echo $quote;    
+
+//variable = $array[source]
+//variable = $array[quote]
 
   
 }
