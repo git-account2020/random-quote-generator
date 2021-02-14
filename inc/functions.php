@@ -34,7 +34,7 @@ $quotes = array(
 // Create the getRandomQuote function and name it getRandomQuote
 function getRandomQuote($array){
   
-  $randomElement = $array[rand(0,4)]; 
+  $randomElement = $array[rand(array_key_first($array),array_key_last($array))]; 
   return $randomElement;  
 } 
 
