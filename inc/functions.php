@@ -1,10 +1,10 @@
 <?php
 // --- PHP - Random Quote Generator ---
-// How do you work on php and test it without using a seperate php file?
 
-
-// Create the Multidimensional array of quote elements and name it quotes
-// Each inner array element should be an associative array 
+/*
+  Create a multi-demensional array
+  Create associative arrays in the inner arrays containing quotes, sources, citations, and years
+*/
 $quotes = array(
 
   array('quote' => 'The only way to learn a new programming language is by writing programs in it.',
@@ -31,7 +31,11 @@ $quotes = array(
 
 
   
-// Create the getRandomQuote function and name it getRandomQuote
+/*
+  Read in a multi-demensional  array of quotes,sources, ciations, and years
+  Create variable that is equal to a random element of the array
+  Return that variable 
+*/
 function getRandomQuote($array){
   
   $randomElement = $array[rand(array_key_first($array),array_key_last($array))]; 
@@ -40,7 +44,12 @@ function getRandomQuote($array){
 
 
 
-//Create the printQuote function.
+/*
+  Read  the random quote element(an array) as an argument
+  Assign source,quote, citation, year to variables
+  Create  html and concatenate source, quote, citation, and year variables into html
+
+*/
 function printQuote($array){
  
   
@@ -64,6 +73,7 @@ echo "</p>";
   
 }
 
+//display the concatenated html
 printQuote($quotes);
 
 
