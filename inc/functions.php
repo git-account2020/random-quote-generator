@@ -54,9 +54,12 @@ function printQuote($quotes){
 
 echo "<p class=\"quote\">" . $quote . "</p>";
 echo "<p class=\"source\">" . $source;
-  //if (
-//echo  "<span class=\"citation\"> [citation here] </span>";
-//echo  "<span class=\"year\"> [year here] </span>";
+  if ($citation){
+    echo  "<span class=\"citation\">" . $citation . "</span>";
+  }
+  if ($year){
+    echo  "<span class=\"year\">" . $year . "</span>";  
+  }
 echo "</p>";
   
 }
