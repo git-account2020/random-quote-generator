@@ -47,7 +47,8 @@ function printQuote($quotes){
   $quoteElement = getRandomQuote($quotes);
   $source = $quoteElement['source'];
   $quote = $quoteElement['quote'];
-  
+  $citation = $quoteElement['citation'];
+  $year = $quoteElement['year'];
   
 
 
