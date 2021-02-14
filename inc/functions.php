@@ -2,7 +2,7 @@
 // --- PHP - Random Quote Generator ---
 
 /*
-  Create a multi-demensional array
+  Create a multi-dimensional array
   Create associative arrays in the inner arrays containing quotes, sources, citations, and years
 */
 $quotes = array(
@@ -32,7 +32,7 @@ $quotes = array(
 
   
 /*
-  Read in a multi-demensional  array of quotes,sources, ciations, and years
+  Read in a multi-demensional  array of quotes,sources, citations, and years
   Create variable that is equal to a random element of the array
   Return that variable 
 */
@@ -46,8 +46,8 @@ function getRandomQuote($array){
 
 /*
   Read  the random quote element(an array) as an argument
-  Assign source,quote, citation, year to variables
-  Create  html and concatenate source, quote, citation, and year variables into html
+  Assign source, quote, citation, year to variables
+  Create html and concatenate source, quote, citation, and year variables into html
 
 */
 function printQuote($array){
