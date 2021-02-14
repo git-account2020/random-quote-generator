@@ -14,7 +14,7 @@ $quotes = array(
   array('quote' => 'Talk is cheap. Show me the code.',
         'source' => 'Linus Torvalds',
         'citation' => '',
-        'year' => ''),
+        'year' => '1984'),
    array('quote' => 'Testing leads to failure, and failure leads to understanding.',
         'source' => 'Burt Rutan',
         'citation' => '',
@@ -25,8 +25,8 @@ $quotes = array(
         'year' => ''),
    array('quote' => 'Programs must be written for people to read, and only incidentally for machines to execute.',
         'source' => 'Harold Abelson',
-        'citation' => '',
-        'year' => '')
+        'citation' => 'Structure and Interpretation of Computer Programs',
+        'year' => '1984')
 );
 
 
