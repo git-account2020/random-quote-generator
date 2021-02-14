@@ -23,45 +23,31 @@ $quotes = array(
   
 // Create the getRandomQuote function and name it getRandomQuote
 function getRandomQuote($array){
-  
- 
   $randomElement;
-
-  $randomElement = $array[rand(0,4)];
-  //var_dump($randomElement);
- 
+  
+  $randomElement = $array[rand(0,4)]; 
   return $randomElement;  
-
-
 } 
 
 
-/*
-output
-  string from inside $quotes
-input
-  array getRandomQuote()
-process
-  print the quote string from the array given by getRandomQuote()
-algorithm
-  
-
-  
-
-*/
 
 //Create the printQuote function.
 function printQuote($quotes){
-$quoteElement = getRandomQuote($quotes);
-$source = $quoteElement['source'];
-$quote = $quoteElement['quote'];
-echo $source;
-echo "\n";
-echo $quote;    
+  $quoteElement;
+  $source; 
+  $quote;  
+  
+  $quoteElement = getRandomQuote($quotes);
+  $source = $quoteElement['source'];
+  $quote = $quoteElement['quote'];
+  
+  //echo out the html line by with concatenation
 
-//variable = $array[source]
-//variable = $array[quote]
-
+echo "<p class=\"quote\"> [quote here] </p>";
+echo "<p class=\"source\"> [source here]";
+echo  "<span class=\"citation\"> [citation here] </span>";
+echo  "<span class=\"year\"> [year here] </span>";
+echo "</p>";
   
 }
 
