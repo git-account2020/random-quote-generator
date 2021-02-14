@@ -41,10 +41,10 @@ function getRandomQuote($array){
 
 
 //Create the printQuote function.
-function printQuote($quotes){
+function printQuote($array){
  
   
-  $quoteElement = getRandomQuote($quotes);
+  $quoteElement = getRandomQuote($array);
   $source = $quoteElement['source'];
   $quote = $quoteElement['quote'];
   $citation = $quoteElement['citation'];
