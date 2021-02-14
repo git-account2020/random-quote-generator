@@ -8,22 +8,31 @@
 $quotes = array(
 
   array('quote' => '"The only way to learn a new programming language is by writing programs in it."',
-        'source' => 'Dennis   Richie'),
+        'source' => 'Dennis   Richie',
+        'citation' => '',
+        'year' => ''),
   array('quote' => '"In some ways, programming is like painting. You start with a blank canvas and certain basic raw materials. You use a combination of science, art, and craft to determine what to do with them.',
-        'source' => 'Andrew Hunt'),
+        'source' => 'Andrew Hunt',
+        'citation' => '',
+        'year' => ''),
    array('quote' => '"Testing leads to failure, and failure leads to understanding."',
-        'source' => 'Burt Rutan'),
+        'source' => 'Burt Rutan',
+        'citation' => '',
+        'year' => ''),
    array('quote' => '"The best error message is the one that never shows up."',
-        'source' => 'Thomas Fuchs'),
+        'source' => 'Thomas Fuchs',
+        'citation' => '',
+        'year' => ''),
    array('quote' => '“Programs must be written for people to read, and only incidentally for machines to execute.”',
-        'source' => 'Harold Abelson')
+        'source' => 'Harold Abelson',
+        'citation' => '',
+        'year' => '')
 );
 
 
   
 // Create the getRandomQuote function and name it getRandomQuote
 function getRandomQuote($array){
-  $randomElement;
   
   $randomElement = $array[rand(0,4)]; 
   return $randomElement;  
@@ -33,18 +42,18 @@ function getRandomQuote($array){
 
 //Create the printQuote function.
 function printQuote($quotes){
-  $quoteElement;
-  $source; 
-  $quote;  
+ 
   
   $quoteElement = getRandomQuote($quotes);
   $source = $quoteElement['source'];
   $quote = $quoteElement['quote'];
   
+  
 
 
 echo "<p class=\"quote\">" . $quote . "</p>";
 echo "<p class=\"source\">" . $source;
+  //if (
 //echo  "<span class=\"citation\"> [citation here] </span>";
 //echo  "<span class=\"year\"> [year here] </span>";
 echo "</p>";
