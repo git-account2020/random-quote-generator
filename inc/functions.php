@@ -1,6 +1,6 @@
 <?php
 // --- PHP - Random Quote Generator ---
-
+// How do you work on php and test it without using a seperate php file?
 
 
 // Create the Multidimensional array of quote elements and name it quotes
@@ -41,12 +41,12 @@ function printQuote($quotes){
   $source = $quoteElement['source'];
   $quote = $quoteElement['quote'];
   
-  //echo out the html line by with concatenation
 
-echo "<p class=\"quote\"> [quote here] </p>";
-echo "<p class=\"source\"> [source here]";
-echo  "<span class=\"citation\"> [citation here] </span>";
-echo  "<span class=\"year\"> [year here] </span>";
+
+echo "<p class=\"quote\">" . $quote . "</p>";
+echo "<p class=\"source\">" . $source;
+//echo  "<span class=\"citation\"> [citation here] </span>";
+//echo  "<span class=\"year\"> [year here] </span>";
 echo "</p>";
   
 }
